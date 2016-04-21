@@ -6,15 +6,15 @@
 	Can optionally delete log files if free disk space drops below a specified amount or delete log files that are older than a specified number of days.
 	Script will delete only delete .zip files and will start with the oldest (based on lastWriteTime). Will delete the minimum amount of files to get the freespace above the specified threshold.
 .NOTES 
-    File Name  : LogCycler.ps1
-    Author     : Brenton keegan - brenton.keegan@gmail.com 
-    Licenced under GPLv3  
+    	File Name  : LogCycler.ps1
+    	Author     : Brenton keegan - brenton.keegan@gmail.com 
+    	Licenced under GPLv3  
 .LINK 
 	https://github.com/bkeegan/LogCycler
-    License: http://www.gnu.org/copyleft/gpl.html
+    	License: http://www.gnu.org/copyleft/gpl.html
 .EXAMPLE 
 	Will zip log files located in "C:\ProgramFolder\LogFiles" and delete previous created zip files should the free space drop below 1 GB (1024 MB)
-	ProfileArchiver -l "C:\ProgramFolder\LogFiles" -ld 1024
+	LogCycler -l "C:\ProgramFolder\LogFiles" -ld 1024
 #> 
 
 
